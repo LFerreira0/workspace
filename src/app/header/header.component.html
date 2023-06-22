@@ -1,0 +1,32 @@
+<header>
+    <div class="container">
+        <div class="brand">
+            <img src="../../assets/images/pilha-de-tres-livros-preto.png" alt="Icone de livros preto">
+            <a routerLink="/" class="logo">WorkSpace</a>
+        </div>
+    <nav>
+        <ul>
+            <li (click)="exibirMenuSecundario()"><a href="#" routerLink="/">Tópicos</a></li>
+            <li><a href="#" routerLink="/list">Documentação</a></li>
+
+            <div class="secondary-menu" *ngIf="exibirMenu">
+                <div class="secondary-menu-content">
+                    <div class="topics">
+                        <ul>
+                            <li>Modulos</li>
+                            <li>Templates</li>
+                            <li>Dependências</li>
+                            <li>Biding</li>
+                            <li>Input Properties</li>
+                            <li>Output Properties</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </ul>
+    </nav>
+    </div>
+</header>
+
+
+
