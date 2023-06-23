@@ -2,19 +2,19 @@
     <div class="container">
         <div class="brand">
             <img src="../../assets/images/pilha-de-tres-livros-preto.png" alt="Icone de livros preto">
-            <a routerLink="/" class="logo">WorkSpace</a>
+            <a routerLink="/" (click)="exibirMenu = false" class="logo">WorkSpace</a>
         </div>
     <nav>
         <ul>
-            <li (click)="exibirMenuSecundario()"><a href="#" routerLink="/">Tópicos</a></li>
+            <li (click)="exibirMenuSecundario()">Tópicos</li>
             <li><a href="#" routerLink="/list">Documentação</a></li>
 
             <div class="secondary-menu" *ngIf="exibirMenu">
                 <div class="secondary-menu-content">
                     <div class="topics">
                         <ul>
-                            <li>Modulos</li>
-                            <li>Templates</li>
+                            <a routerLink="/module" (click)="exibirMenu = false"><li>Modulos</li></a>
+                            <a routerLink="/template" (click)="exibirMenu = false"><li>Templates</li></a>
                             <li>Dependências</li>
                             <li>Biding</li>
                             <li>Input Properties</li>

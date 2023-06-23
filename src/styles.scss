@@ -1,5 +1,21 @@
+@import "prismjs/themes/prism-tomorrow.css";
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body, app-root{
+    flex-grow: 1;
+}
+
+body, app-root,html{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;    
+}
+
+h1{
+    padding: 1em 0;
+    font-size: 20px;
 }

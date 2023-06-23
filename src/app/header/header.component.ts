@@ -13,8 +13,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  public exibirMenuSecundario(){
-    console.log("teste");
+  public exibirMenuSecundario(){    
       this.exibirMenu = !this.exibirMenu;
   }
 
