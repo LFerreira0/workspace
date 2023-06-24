@@ -1,7 +1,7 @@
 <div class="container">
-    <textarea name="sand-box" placeholder="//Digite seu código aqui"></textarea>
+    <textarea name="sand-box" [(ngModel)]="content" placeholder="//Digite seu código aqui"></textarea>
     <div class="feedback">
-        <div class="console"></div>
-        <div class="error"><p></p></div>
+        <div class="console"><p #outputField></p></div>
+        <div class="error"><p #errorField></p></div>
     </div>
 </div>

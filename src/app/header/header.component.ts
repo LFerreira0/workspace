@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ThemeService } from '../services/theme.service';
 
 @Component({
   selector: 'app-header',
@@ -8,7 +9,9 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
   exibirMenu = false;
 
-  constructor() { }
+  constructor(
+    public readonly themeService : ThemeService
+  ) { }
 
   ngOnInit(): void {
   }

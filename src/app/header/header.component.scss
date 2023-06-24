@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 body {
     margin: 0;
-    font-size: 18px;
+    font-size: 20px;
 }
+
+$dark-mode: #121212;
+
+
 
 .container {
     width: 80%;
@@ -11,6 +15,12 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 100%;    
+    font-weight: 500;
+
+    img{
+        height: 30px;
+        cursor: pointer;
+    }
 }
 
 header {
@@ -18,12 +28,10 @@ header {
     box-shadow: 0px 1px 5px -2px rgba(0,0,0,0.29);
     font-family: 'Roboto', sans-serif;
     position: relative;    
+    font-size: 18px;
     a {
         color: #000;        
         text-decoration: none;
-    }
-    a.logo {
-        font-weight: bold;
     }
 
     .brand {
