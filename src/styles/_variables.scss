@@ -1,13 +1,19 @@
 :root {
     --background-color: white;
     --font-color: black;
-}
+    --background-container: rgb(243, 243, 243);
+    --border: 1px solid lightgray;
+    --background-color-hover: #E6E6E6;
+}   
 
 .white {
     
 }
 
 .dark {
-    --background-color: #121212;
+    --background-color: #1E1E1E;
     --font-color: white;
+    --background-container: #121212;
+    --border: 1px solid #1a1a1a;
+    --background-color-hover: #111111;
 }

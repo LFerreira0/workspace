@@ -8,6 +8,7 @@ import { ThemeService } from '../services/theme.service';
 })
 export class HeaderComponent implements OnInit {
   exibirMenu = false;
+  darkMode = false;
 
   constructor(
     public readonly themeService : ThemeService
@@ -18,6 +19,11 @@ export class HeaderComponent implements OnInit {
 
   public exibirMenuSecundario(){    
       this.exibirMenu = !this.exibirMenu;
+  }
+
+  public themeSwitch(){
+    this.themeService.toggleTheme()
+    this.darkMode = !this.darkMode;
   }
 
 

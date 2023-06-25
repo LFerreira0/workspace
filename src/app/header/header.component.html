@@ -1,13 +1,14 @@
 <header>
     <div class="container">
         <div class="brand">
-            <img src="../../assets/images/pilha-de-tres-livros-preto.png" alt="Icone de livros preto">
+            <img *ngIf="!darkMode" src="../../assets/images/pilha-de-tres-livros-preto.png" alt="Icone de livros preto">
+            <img *ngIf="darkMode" src="../../assets/images/pilha-de-tres-livros-branco.png" alt="Icone de livros branco">
             <a routerLink="/" (click)="exibirMenu = false" class="logo">WorkSpace</a>
-        </div>
+        </div>        
         <nav>
             <ul>
                 <li (click)="exibirMenuSecundario()">Tópicos</li>
-                <li><a href="#" routerLink="/list">Documentação</a></li>
+                <li>Documentação</li>
                 <li>Links</li>
                 <li>Cursos</li>
 
@@ -27,9 +28,10 @@
                 </div>
             </ul>
         </nav>
-        <div class="dark-mode"><img src="../../../assets/images/dark-mode.png" alt="Dark Mode Icon" (click)="themeService.toggleTheme()"></div>
+            <div class="dark-mode">
+                    <img *ngIf="!darkMode" src="../../../assets/images/dark-mode.png" alt="Dark Mode Icon" (click)="themeSwitch()">
+                    <img *ngIf="darkMode"src="../../../assets/images/dark-mode-light.png" alt="Light Mode Icon" (click)="themeSwitch()">  
+            </div>
     </div>
 </header>
-
-
 

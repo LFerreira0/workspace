@@ -20,9 +20,7 @@ export class ThemeService{
     }
 
     public toggleTheme(){
-        console.log(this.theme)
-        this.theme = this.theme === Theme.LIGHT ? Theme.DARK : Theme.LIGHT;
-        console.log(this.theme)
+        this.theme = this.theme === Theme.LIGHT ? Theme.DARK : Theme.LIGHT;        
         localStorage.setItem(this.storageKey, this.theme);
         if (this.theme === Theme.DARK) {
             this.document.body.classList.add(Theme.DARK)
