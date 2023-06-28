@@ -1,10 +1,10 @@
 <header>
     <div class="container">
         <div class="brand">
-            <img *ngIf="!darkMode" src="../../assets/images/pilha-de-tres-livros-preto.png" alt="Icone de livros preto">
-            <img *ngIf="darkMode" src="../../assets/images/pilha-de-tres-livros-branco.png" alt="Icone de livros branco">
+            <img *ngIf="themeService.theme === templateEnums.theme.LIGHT" src="../../assets/images/pilha-de-tres-livros-preto.png" alt="Icone de livros preto">
+            <img *ngIf="themeService.theme === templateEnums.theme.DARK" src="../../assets/images/pilha-de-tres-livros-branco.png" alt="Icone de livros branco">
             <a routerLink="/" (click)="exibirMenu = false" class="logo">WorkSpace</a>
-        </div>        
+        </div>                
         <nav>
             <ul>
                 <li (click)="exibirMenuSecundario()">Tópicos</li>
@@ -19,7 +19,7 @@
                                 <a routerLink="/module" (click)="exibirMenu = false"><li>Modulos</li></a>
                                 <a routerLink="/template" (click)="exibirMenu = false"><li>Templates</li></a>
                                 <li>Dependências</li>
-                                <li>Biding</li>
+                                <a routerLink="/binding" (click)="exibirMenu = false"><li>Biding</li></a>
                                 <li>Input Properties</li>
                                 <li>Output Properties</li>
                             </ul>
@@ -28,10 +28,10 @@
                 </div>
             </ul>
         </nav>
-            <div class="dark-mode">
-                    <img *ngIf="!darkMode" src="../../../assets/images/dark-mode.png" alt="Dark Mode Icon" (click)="themeSwitch()">
-                    <img *ngIf="darkMode"src="../../../assets/images/dark-mode-light.png" alt="Light Mode Icon" (click)="themeSwitch()">  
-            </div>
+        <div class="dark-mode">
+                <img *ngIf="themeService.theme === templateEnums.theme.LIGHT" src="../../../assets/images/dark-mode.png" alt="Dark Mode Icon" (click)="themeSwitch()">
+                <img *ngIf="themeService.theme === templateEnums.theme.DARK" src="../../../assets/images/dark-mode-light.png" alt="Light Mode Icon" (click)="themeSwitch()">  
+        </div>
     </div>
 </header>
 

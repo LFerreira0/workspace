@@ -1,0 +1,41 @@
+<div class="container">
+    <h1>Binding</h1>
+
+    <table>
+        <tr>
+          <th>Utilização</th>
+          <th>Sintaxe</th>          
+        </tr>
+        <tr>
+          <td>É possivel exibir um valor de uma variável no template inserindo-o entre chaves duplas:</td>
+          <td>{{ site }}</td>          
+        </tr>
+        <tr>
+            <td>É possivel a resolução de expressões dentro de uma interpolação:</td>
+            <td>{{ 3 * 3 }}</td>
+        </tr>
+        <tr>
+            <td>É possivel invocar uma função dentro de uma interpolação:</td>
+            <td>{{ 3 * 3 * getValor()}}</td>
+        </tr>
+        <tr>
+            <td>É possivel a interpretação de operadores lógicos dentro de uma interpolação:</td>
+            <td> {{boolean1 || boolean2}}</td>
+        </tr>
+        <tr>
+            <td>É possivel realizar binding de imagens de diversas formas:</td>
+            <td><img src="{{ urlImagem }}">
+            <img [src]="urlImagem">
+            <img bind-src="urlImagem"></td>
+        </tr>
+    </table>
+
+    <h3>Class e Style Binding</h3>
+
+    
+
+</div>
+
+
+
+    

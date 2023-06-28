@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ThemeService } from '../services/theme.service';
+import { Theme } from '../enums/theme.enum';
 
 @Component({
   selector: 'app-header',
@@ -7,14 +8,16 @@ import { ThemeService } from '../services/theme.service';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  exibirMenu = false;
-  darkMode = false;
+  exibirMenu = false;  
+  templateEnums = {
+      theme: Theme
+  }
 
   constructor(
     public readonly themeService : ThemeService
   ) { }
 
-  ngOnInit(): void {
+  ngOnInit(): void {    
   }
 
   public exibirMenuSecundario(){    
@@ -22,8 +25,7 @@ export class HeaderComponent implements OnInit {
   }
 
   public themeSwitch(){
-    this.themeService.toggleTheme()
-    this.darkMode = !this.darkMode;
+    this.themeService.toggleTheme();    
   }
 
 

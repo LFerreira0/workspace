@@ -1,0 +1,43 @@
+.container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;    
+    font-family: 'Roboto', sans-serif;
+
+    h3{
+      padding-top: 2em;
+    }
+
+    img{
+        width: 50px;
+    }
+
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+
+        img{
+            margin-right: 1em;
+        }
+      }
+      
+      td, th {        
+        text-align: left;
+        padding: 2em;
+      }
+      
+      tr:nth-child(even) {
+        background-color: var(--background-color-hover);
+      }
+      
+    p{
+        padding: 1em 0;
+    }
+
+    span{
+        margin-top: 1em;
+    }   
+}

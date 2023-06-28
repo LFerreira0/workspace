@@ -4,18 +4,20 @@ import { Theme } from "../enums/theme.enum";
 
 @Injectable()
 export class ThemeService{
-    private theme: Theme = this.getTheme();
+    public theme!: Theme;
     private storageKey = "theme";
 
     constructor(
         @Inject(DOCUMENT) private readonly document : Document,
-    ){}
+    ){
+        this.theme = this.getTheme();
+    }
 
     public getTheme(): Theme{
-        const storagedTheme = localStorage.getItem(this.storageKey);
+        const storagedTheme = localStorage.getItem(this.storageKey);          
         if(storagedTheme === Theme.DARK){
             this.document.body.classList.add(Theme.DARK);
-        }
+        }                
         return storagedTheme ? storagedTheme as Theme : Theme.LIGHT;
     }
 

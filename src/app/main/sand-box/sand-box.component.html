@@ -1,5 +1,13 @@
 <div class="container">
-    <textarea name="sand-box" [(ngModel)]="content" placeholder="//Digite seu código aqui"></textarea>
+    <div class="code">
+        <textarea name="sand-box" [(ngModel)]="content" placeholder="//Digite seu código aqui"></textarea>
+        
+        <select name="cars" id="cars">
+            <option value="JSON">JSON</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Java">Java</option>
+            <option value="CSS">CSS</option>
+          </select>    </div>
     <div class="feedback">
         <div class="console"><p #outputField></p></div>
         <div class="error"><p #errorField></p></div>
