@@ -31,9 +31,31 @@
     </table>
 
     <h3>Class e Style Binding</h3>
-
     
+    <select #classe (change)="0">
+        <option value="alert-primary">Primary</option>
+        <option value="alert-success">Sucesso</option>
+        <option value="alert-danger">Danger</option>
+    </select>
 
+    <div class="alert {{ classe.value }}" role="alert">Css Dinâmico</div>
+
+    <div class="alert" role="alert" [class.alert-primary]="classe.value == 'alert-primary'">...</div>
+    <div class="alert" role="alert" [class.alert-success]="classe.value == 'alert-success'">...</div>
+    <div class="alert" role="alert" [class.alert-danger]="classe.value == 'alert-danger'">...</div>
+
+    <div class="alert alert-danger" role="alert" [style.display]="classe.value == 'alert-danger' ? 'block' : 'none' ">
+        Esse texto aparece somente em caso de erro.
+    </div>
+
+    <p>É possivel aplicar estilos dentro do @Component criando o meta dado "styles".</p>
+
+    <h3>Event Binding</h3>
+    <button (click)="onClick()" class="btn btn-primary">Clique</button>
+    <input type="text" (keyup)="onKeyUp($event)" (keyup.enter)="onKeyUpEnter($any(campoInput).value)" (blur)="onKeyUpEnter($any($event.target).value)" #campoInput>
+    <p>Valor atual: {{ valorAtual }}</p>
+    <p>Valor ao pressionar Enter ou Blur: {{ valorSalvo }}</p>
+    <span (mouseover)="onMouseOverOut()" (mouseout)="onMouseOverOut()" [class.highlight]="isMouseOver">Propriedades Hover</span>
 </div>
 
 
