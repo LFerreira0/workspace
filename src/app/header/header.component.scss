@@ -56,6 +56,7 @@ header {
                 &:hover {
                     background: var(--background-color-hover);
                     cursor: pointer;
+                    border-radius: 5px;
                 }       
 
                 &:first-child:hover  ~.secondary-menu{
