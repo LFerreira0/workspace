@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
-@import "~prismjs/themes/prism-okaidia";
+@import "~prismjs/themes/prism-tomorrow";
+@import "~prismjs/plugins/toolbar/prism-toolbar.css";
+
 
 :host{
     display: flex;
@@ -14,6 +16,7 @@
     flex-grow: 1;
     background-color: var(--background-container);
     color: var(--font-color);
+    
 
     .code{
         width: 49%;
@@ -34,6 +37,7 @@
             padding: 5px;
             border-radius: 5px;
             font-family: 'Roboto', sans-serif;        
+            z-index: 99;
         }
 
         select:focus{
@@ -42,7 +46,7 @@
 
         textarea{        
             resize: none;              
-            padding: 10px;        
+            padding: 15px;        
             align-items: flex-end;
             font-size: 18px;
             width: 100%;    
@@ -50,7 +54,7 @@
             border: none;
             border-radius: 5px;
             background-color: var(--background-color);
-    
+            
             &:focus{            
                 outline: 0;        
             }
@@ -98,5 +102,57 @@
     }
 }
 
+.code-container {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+
+    textarea,pre,code {
+        margin: 0;
+        padding: 0;
+        line-height: 1.5;
+        font-family: 'Roboto', sans-serif;        
+        background-color: var(--background-color);
+        color: var(--font-color);
+    }
+
+    textarea {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        background-color: transparent !important;
+        color: transparent;
+        z-index: 2;
+        caret-color: var(--font-color);
+        white-space: nowrap;
+        overflow: auto;
+        text-align: left;
+        display: block;
+        resize: none;
+        width: 100%;
+        text-align: left;
+        padding: 10px 0 0 70px !important;
+
+        &,
+        &:focus {
+            box-shadow: none;
+            outline: 0;
+            border: 0;
+        }
+    }
 
 
+    pre {
+       height: 100%;
+       min-height: inherit;
+       z-index: 1;
+       overflow: auto;
+       padding: 15px 0 0 70px;
+        code {
+            min-height: 100%;
+            overflow: hidden;
+            height: 100%;
+            
+        }
+    }
+}

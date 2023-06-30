@@ -9,8 +9,9 @@ import { ThreadsModule } from './threads/threads.module';
 import "prismjs";
 import "prismjs/components/prism-typescript";
 import "prismjs/components/prism-scss";
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ThemeService } from './services/theme.service';
+import { PrismService } from './services/prism.service';
 
 
 @NgModule({
@@ -23,9 +24,10 @@ import { ThemeService } from './services/theme.service';
     BrowserModule,
     AppRoutingModule,
     ThreadsModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [ThemeService],
+  providers: [ThemeService, PrismService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

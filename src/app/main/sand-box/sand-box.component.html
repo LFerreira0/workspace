@@ -1,13 +1,15 @@
 <div class="container-sand-box">
     <div class="code">
-        <textarea name="sand-box" [(ngModel)]="content" placeholder="//Digite seu código aqui"></textarea>
-        
-        <select name="cars" id="cars">
-            <option value="JSON">JSON</option>
-            <option value="JavaScript">JavaScript</option>
-            <option value="Java">Java</option>
-            <option value="CSS">CSS</option>
-          </select>    </div>
+        <form [formGroup]="form" class="code-container">
+            <textarea #editor name="sand-box"[(ngModel)]="content" formControlName="contentEditor" [spellcheck]="false" placeholder="// Digite seu código aqui"></textarea>
+            <pre><code #codeViewer [class]="'language-' + language | lowercase"></code></pre>
+         </form>
+        <select name="language" id="language" [(ngModel)]="language" (change)="languageChange()">
+            <option value="js">JS</option>
+            <option value="JSON" disabled>TS</option>
+            <option value="CSS" disabled>CSS</option>
+          </select>    
+    </div>
     <div class="feedback">
         <div class="console"><p #outputField></p></div>
         <div class="error"><p #errorField></p></div>
