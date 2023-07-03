@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ClassTemplateComponent } from './class-template/class-template.component';
 import { ClassModuleComponent } from './class-module/class-module.component';
 import { ClassBindingComponent } from './class-binding/class-binding.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -13,7 +14,8 @@ import { ClassBindingComponent } from './class-binding/class-binding.component';
     ClassBindingComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule,
   ],
   exports: [
     ClassTemplateComponent

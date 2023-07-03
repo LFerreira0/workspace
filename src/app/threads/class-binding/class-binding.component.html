@@ -56,6 +56,19 @@
     <p>Valor atual: {{ valorAtual }}</p>
     <p>Valor ao pressionar Enter ou Blur: {{ valorSalvo }}</p>
     <span (mouseover)="onMouseOverOut()" (mouseout)="onMouseOverOut()" [class.highlight]="isMouseOver">Propriedades Hover</span>
+
+    <h3>Two-way data binding</h3>
+
+    <div class="two-way">
+        <input type="text" [value]="nome" (input)="nome = ($any($event.target).value)">
+        <input type="text" [ngModel]="nome" (ngModelChange)="nome = ($any($event))">
+        <input type="text" [(ngModel)]="nome">
+        <input type="text" bindon-ngModel="nome">
+        <input type="text" [(ngModel)]="pessoa.nome">
+        <input type="text" [(ngModel)]="pessoa.idade">
+    </div>
+    <p>Nome: {{ nome }}</p>
+    <p>Nome: {{ pessoa.nome }} e Idade: {{pessoa.idade}}</p>
 </div>
 
 

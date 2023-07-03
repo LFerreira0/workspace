@@ -13,6 +13,11 @@ export class ClassBindingComponent implements OnInit {
   valorAtual: string = "";
   valorSalvo: string = "";
   isMouseOver: boolean = false;
+  nome: string = '';
+  pessoa: any = {
+    nome: 'def',
+    idade: '18'
+  }
 
   constructor() { }
 
