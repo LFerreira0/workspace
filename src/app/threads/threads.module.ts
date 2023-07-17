@@ -4,6 +4,9 @@ import { ClassTemplateComponent } from './class-template/class-template.componen
 import { ClassModuleComponent } from './class-module/class-module.component';
 import { ClassBindingComponent } from './class-binding/class-binding.component';
 import { FormsModule } from '@angular/forms';
+import { ClassInputComponent } from './class-input/class-input.component';
+import { ClassOutputComponent } from './class-output/class-output.component';
+import { ClassLifeCycleComponent } from './class-life-cycle/class-life-cycle.component';
 
 
 
@@ -11,7 +14,10 @@ import { FormsModule } from '@angular/forms';
   declarations: [
     ClassTemplateComponent,
     ClassModuleComponent,
-    ClassBindingComponent
+    ClassBindingComponent,
+    ClassInputComponent,
+    ClassOutputComponent,
+    ClassLifeCycleComponent
   ],
   imports: [
     CommonModule,

@@ -1,0 +1,41 @@
+<div class="container-life-cycle">
+    <h1>Binding</h1>
+
+    <table>
+        <tr>
+          <th>Eventos(Hoocks)</th>
+          <th>Quando</th>          
+        </tr>
+        <tr>
+          <td>ngOnChange</td>
+          <td>antes 2# e quando o valor property-binding é atualizado</td>          
+        </tr>
+        <tr>
+            <td>ngOnInit</td>
+            <td>quando o <strong>componente</strong> é iniciado</td>
+        </tr>
+        <tr>
+            <td>ngDoCheck</td>
+            <td>a cada ciclo de verificação de mudança</td>
+        </tr>
+        <tr>
+            <td>ngAfterContentInit</td>
+            <td>depois de inserir conteúdo externo na view</td>
+        </tr>
+        <tr>
+            <td>ngAfterContentChecked</td>
+            <td>a cada verificação de conteúdo inserido</td>
+        </tr>
+        <tr>
+            <td>ngAfterViewChecked</td>
+            <td>a cada verificação de conteúdo / conteúdo filho</td>
+        </tr>
+        <tr>
+            <td>ngOnDestroy</td>
+            <td>antes da diretiva/component ser destruído</td>
+        </tr>
+    </table>    
+    <h5>Exemplos:</h5>
+    <p>Valor inicial: {{ valorInicial }}</p>
+
+    </div>

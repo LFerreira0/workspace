@@ -14,6 +14,7 @@ export class ClassBindingComponent implements OnInit {
   valorSalvo: string = "";
   isMouseOver: boolean = false;
   nome: string = '';
+  nomeCurso: string = 'Angular';
   pessoa: any = {
     nome: 'def',
     idade: '18'
@@ -42,5 +43,9 @@ export class ClassBindingComponent implements OnInit {
 
   public onMouseOverOut(){
     this.isMouseOver = !this.isMouseOver;
+  }
+
+  public onMudouValor(evento:any){
+    console.log(evento.novoValor);
   }
 }

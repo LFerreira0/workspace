@@ -69,6 +69,13 @@
     </div>
     <p>Nome: {{ nome }}</p>
     <p>Nome: {{ pessoa.nome }} e Idade: {{pessoa.idade}}</p>
+
+
+    <app-class-input [nome]="nomeCurso">
+
+    </app-class-input>
+
+    <contador valor=10 (mudouValor)="onMudouValor($event)"></contador>
 </div>
 
 
