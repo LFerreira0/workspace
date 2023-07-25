@@ -7,6 +7,8 @@ import { FormsModule } from '@angular/forms';
 import { ClassInputComponent } from './class-input/class-input.component';
 import { ClassOutputComponent } from './class-output/class-output.component';
 import { ClassLifeCycleComponent } from './class-life-cycle/class-life-cycle.component';
+import { ClassCliComponent } from './class-cli/class-cli.component';
+import { ClassDiretivasComponent } from './class-diretivas/class-diretivas.component';
 
 
 
@@ -17,7 +19,9 @@ import { ClassLifeCycleComponent } from './class-life-cycle/class-life-cycle.com
     ClassBindingComponent,
     ClassInputComponent,
     ClassOutputComponent,
-    ClassLifeCycleComponent
+    ClassLifeCycleComponent,
+    ClassCliComponent,
+    ClassDiretivasComponent
   ],
   imports: [
     CommonModule,

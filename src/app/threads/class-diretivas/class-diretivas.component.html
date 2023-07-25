@@ -1,0 +1,72 @@
+<div class="container-diretivas">
+    <h1>Diretivas</h1>
+
+    <table>
+        <tr>
+          <th>Diretiva</th>
+          <th>Função</th>          
+        </tr>
+        <tr>
+          <td>*ngFor</td>
+          <td>Interage com a view e modificam a estrutura do DOM e/ou código HTML</td>          
+        </tr>        
+        <tr>
+            <td>*ngIf</td>
+            <td>Interage com a view e modificam a estrutura do DOM e/ou código HTML(Recomendado para árvore de elementos grandes)</td>          
+        </tr>     
+        <tr>
+            <td>ng-class</td>
+            <td>Interagem com o elemento em que foram aplicadas</td>          
+        </tr>      
+        <tr>
+            <td>ng-style</td>
+            <td>Interagem com o elemento em que foram aplicadas</td>          
+        </tr>      
+    </table> 
+    <br>
+    <h5>*ngIf</h5>    
+    <div *ngIf="valores.length">
+        <p>Esta div apenas é exibida caso existam valores.</p>
+    </div>
+
+    <h5>ngSwitch</h5>
+
+    <select #valor name="valor" (change)="0">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select> 
+
+    <div class="div-pai">
+        <div class="div-filho" [class.active]="valor.value == '1'">1</div>
+        <div class="div-filho" [class.active]="valor.value == '2'">2</div>
+        <div class="div-filho" [class.active]="valor.value == '3'">3</div>
+    </div>
+    <br>
+    <div class="output" [ngSwitch]="valor.value">
+        <p *ngSwitchCase="'1'">Primeira opção selecionada</p>
+        <p *ngSwitchCase="'2'">Segunda opção selecionada</p>
+        <p *ngSwitchCase="'3'">Terceira opção selecionada</p>
+        <p *ngSwitchDefault>Nenhuma opção selecionada</p>
+    </div>
+
+    <h5>ngFor</h5>
+
+    <ul>
+        <li *ngFor="let valor of valores">{{ valor }}</li>
+    </ul>
+
+    <h5>ngClass</h5>
+
+    <button class="btn" (click)="ativo = !ativo" [ngClass]="{
+        'btn-primary' : ativo,
+        'btn-secondary': !ativo
+    }">Clique</button>
+    <br>
+    <h5>ngStyle</h5>
+
+    <button class="btn btn-secondary" (click)="ativo = !ativo" [ngStyle]="{        
+        'color': (ativo ? 'red' : 'white')
+    }">Clique</button>
+
+</div>

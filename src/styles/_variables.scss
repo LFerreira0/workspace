@@ -4,6 +4,8 @@
     --background-container: rgb(243, 243, 243);
     --border: 1px solid lightgray;
     --background-color-hover: #E6E6E6;
+    --border-color-reverse: 1px solid #111111;
+    --background-reverse: #a1a1a1;
 }   
 
 .white {
@@ -14,6 +16,8 @@
     --background-color: #1E1E1E;
     --font-color: white;
     --background-container: #121212;
-    --border: 1px solid #1a1a1a;
+    --border: 1px solid #111111;
     --background-color-hover: #111111;
+    --border-color-reverse: 1px solid lightgray;
+    --background-reverse: #3a3a3a;
 }

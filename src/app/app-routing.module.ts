@@ -6,6 +6,8 @@ import { ClassModuleComponent } from "./threads/class-module/class-module.compon
 import { ClassBindingComponent } from "./threads/class-binding/class-binding.component";
 import { ClassInputComponent } from "./threads/class-input/class-input.component";
 import { ClassLifeCycleComponent } from "./threads/class-life-cycle/class-life-cycle.component";
+import { ClassCliComponent } from "./threads/class-cli/class-cli.component";
+import { ClassDiretivasComponent } from "./threads/class-diretivas/class-diretivas.component";
 
 const APP_ROUTES: Routes = [
     {   path: '', component: SandBoxComponent   },
@@ -14,7 +16,9 @@ const APP_ROUTES: Routes = [
     {   path: 'binding', component: ClassBindingComponent},
     {   path: 'input', component: ClassInputComponent},
     {   path: 'life-cycle', component: ClassLifeCycleComponent},
-
+    {   path: 'cli', component: ClassCliComponent},
+    {   path: 'diretivas', component: ClassDiretivasComponent},
+    
 ]
 
 @NgModule({

@@ -1,0 +1,23 @@
+.container-cli{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;    
+    font-family: 'Roboto', sans-serif;
+
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td, th {        
+        text-align: left;
+        padding: 2em;
+      }
+
+    tr:nth-child(even) {
+        background-color: var(--background-color-hover);
+      }
+}

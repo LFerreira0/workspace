@@ -1,0 +1,59 @@
+.active{
+  background-color: var(--background-reverse);
+}
+
+button{
+  width: 100px;  
+}
+
+.container-diretivas{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;    
+    font-family: 'Roboto', sans-serif;
+
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td, th {        
+        text-align: left;
+        padding: 2em;
+      }
+
+    tr:nth-child(even) {
+        background-color: var(--background-color-hover);
+      }
+
+      select{
+        width: 100px;
+        margin-bottom: 2em;
+        border-radius: 5px;
+        background-color: var(--background-color-hover);
+        color: var(--font-color);
+        padding: .5em 0;
+        text-align: center;
+      }
+
+      .div-pai{
+        width: 550px;
+        height: 50px;
+        background-color: var(--background-color-hover);
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-around;
+        cursor: pointer;
+        .div-filho{          
+          height: 50px;
+          line-height: 50px;          
+          border: var(--border-color-reverse);
+          width: 33%;
+          border-radius: 5px;
+          text-align: center;
+        }
+      }
+}

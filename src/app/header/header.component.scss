@@ -80,6 +80,7 @@ header {
     font-size: 16px;
     background-color: var(--background-color);
     z-index: 300;
+    border-bottom: 1px solid #0000001e;
  
     
     .secondary-menu-content{
@@ -89,10 +90,12 @@ header {
         align-items: center;        
         height: 100%;        
         .topics{
+            display: flex;
             ul{
                 display: block;
                 li{
                     padding: .7em;
+                    border-bottom: var(--border);
                 }
             }                                    
         }
