@@ -8,6 +8,7 @@ import { ClassInputComponent } from "./threads/class-input/class-input.component
 import { ClassLifeCycleComponent } from "./threads/class-life-cycle/class-life-cycle.component";
 import { ClassCliComponent } from "./threads/class-cli/class-cli.component";
 import { ClassDiretivasComponent } from "./threads/class-diretivas/class-diretivas.component";
+import { ClassNgContentComponent } from "./threads/class-ng-content/class-ng-content.component";
 
 const APP_ROUTES: Routes = [
     {   path: '', component: SandBoxComponent   },
@@ -18,6 +19,7 @@ const APP_ROUTES: Routes = [
     {   path: 'life-cycle', component: ClassLifeCycleComponent},
     {   path: 'cli', component: ClassCliComponent},
     {   path: 'diretivas', component: ClassDiretivasComponent},
+
     
 ]
 

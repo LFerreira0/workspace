@@ -9,6 +9,9 @@ import { ClassOutputComponent } from './class-output/class-output.component';
 import { ClassLifeCycleComponent } from './class-life-cycle/class-life-cycle.component';
 import { ClassCliComponent } from './class-cli/class-cli.component';
 import { ClassDiretivasComponent } from './class-diretivas/class-diretivas.component';
+import { ClassNgContentComponent } from './class-ng-content/class-ng-content.component';
+import { HighLightDirective } from '../shared/highlight.directive';
+import { HighlightMouseDirective } from '../shared/highlight-mouse.directive';
 
 
 
@@ -21,7 +24,10 @@ import { ClassDiretivasComponent } from './class-diretivas/class-diretivas.compo
     ClassOutputComponent,
     ClassLifeCycleComponent,
     ClassCliComponent,
-    ClassDiretivasComponent
+    ClassDiretivasComponent,
+    ClassNgContentComponent,
+    HighLightDirective,
+    HighlightMouseDirective
   ],
   imports: [
     CommonModule,

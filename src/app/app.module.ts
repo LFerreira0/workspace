@@ -12,6 +12,7 @@ import "prismjs/components/prism-scss";
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ThemeService } from './services/theme.service';
 import { PrismService } from './services/prism.service';
+import { HighlightMouseDirective } from './shared/highlight-mouse.directive';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { PrismService } from './services/prism.service';
     AppComponent,
     HeaderComponent,
     SandBoxComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -27,6 +29,7 @@ import { PrismService } from './services/prism.service';
     FormsModule,
     ReactiveFormsModule
   ],
+
   providers: [ThemeService, PrismService],
   bootstrap: [AppComponent]
 })
