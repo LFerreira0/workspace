@@ -1,0 +1,20 @@
+<div class="container-services">
+    <h1>Serviços</h1>
+
+    <ul>
+        <li *ngFor="let valor of valores">
+            {{ valor }}
+        </li>
+    </ul>
+
+    <input type="text" #valueInput>
+    <button class="btn btn-primary"  (click)="onAddValue(valueInput.value)">Adicionar</button>
+
+    <h5>Ao criar um serviço, este precisa ser provido para aplicação, existem algumas formas de fazer isso:</h5>
+    <ul>
+        <li>Sendo declarado no modulo, onde o serviço ficará disponível para todos os componentes deste listados neste modulo;</li>
+        <li>Via root, onde o serviço se auto provê, assim podendo ser utilizado em toda a solução;</li>
+        <li>Via meta-dado providers dentro do @component do TS, ficando disponível apenas para um componente especifico.</li>
+    </ul>
+    
+</div>

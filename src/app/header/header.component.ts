@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ThemeService } from '../services/theme.service';
+import { ThemeService } from '../services/theme/theme.service';
 import { Theme } from '../enums/theme.enum';
 
 @Component({

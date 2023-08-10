@@ -10,8 +10,11 @@ import { ClassLifeCycleComponent } from './class-life-cycle/class-life-cycle.com
 import { ClassCliComponent } from './class-cli/class-cli.component';
 import { ClassDiretivasComponent } from './class-diretivas/class-diretivas.component';
 import { ClassNgContentComponent } from './class-ng-content/class-ng-content.component';
-import { HighLightDirective } from '../shared/highlight.directive';
-import { HighlightMouseDirective } from '../shared/highlight-mouse.directive';
+import { HighLightDirective } from '../shared/directives/highlight/highlight.directive';
+import { HighlightMouseDirective } from '../shared/directives/highlight-mouse/highlight-mouse.directive';
+import { CustomHighlightDirective } from '../shared/directives/custon-highlight/custom-highlight.directive';
+import { NgElseDirective } from '../shared/directives/ng-else/ng-else.directive';
+import { ClassServicesComponent } from './class-services/class-services.component';
 
 
 
@@ -27,7 +30,10 @@ import { HighlightMouseDirective } from '../shared/highlight-mouse.directive';
     ClassDiretivasComponent,
     ClassNgContentComponent,
     HighLightDirective,
-    HighlightMouseDirective
+    HighlightMouseDirective,
+    CustomHighlightDirective,
+    NgElseDirective,
+    ClassServicesComponent
   ],
   imports: [
     CommonModule,

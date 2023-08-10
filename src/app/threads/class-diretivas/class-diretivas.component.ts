@@ -13,9 +13,15 @@ export class ClassDiretivasComponent implements OnInit {
 
   ativo: boolean = false;
 
+  mostrarConteudo: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  alternarConteudo(){
+    this.mostrarConteudo = !this.mostrarConteudo;
   }
 
 }

@@ -2,7 +2,7 @@ import { ThisReceiver } from '@angular/compiler';
 import { AfterViewChecked, AfterViewInit, Component, ElementRef, HostListener, OnDestroy, OnInit, Renderer2, ViewChild } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import { Subscription } from 'rxjs';
-import { PrismService } from 'src/app/services/prism.service';
+import { PrismService } from 'src/app/services/prism/prism.service';
 
 @Component({
   selector: 'app-sand-box',

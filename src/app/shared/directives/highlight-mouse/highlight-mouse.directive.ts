@@ -5,13 +5,15 @@ import { Directive, HostListener, HostBinding, ElementRef, Renderer2, Host } fro
 })
 export class HighlightMouseDirective {
 
+  //Existe outra forma de obter o mesmo comportamento através dos códigos comentados
+
   @HostListener('mouseenter') onMouseOver() {
     // this._renderer.setStyle(this._elementRef.nativeElement, 'background-color', 'yellow');
-    this.backgroundColor = 'yellow';  }
+    this.backgroundColor = 'var(--background-reverse)';  }
 
   @HostListener('mouseleave') onMouseLeave() {
   //   this._renderer.setStyle(this._elementRef.nativeElement, 'background-color', 'white');
-  this.backgroundColor = 'white';
+  this.backgroundColor = 'var(--background-color)';
   }
 
   @HostBinding('style.backgroundColor') backgroundColor!: string;

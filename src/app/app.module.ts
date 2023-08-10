@@ -1,26 +1,24 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import "prismjs";
+import "prismjs/components/prism-scss";
+import "prismjs/components/prism-typescript";
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { SandBoxComponent } from './main/sand-box/sand-box.component';
-import { AppRoutingModule } from './app-routing.module';
+import { PrismService } from './services/prism/prism.service';
+import { ThemeService } from './services/theme/theme.service';
 import { ThreadsModule } from './threads/threads.module';
-import "prismjs";
-import "prismjs/components/prism-typescript";
-import "prismjs/components/prism-scss";
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { ThemeService } from './services/theme.service';
-import { PrismService } from './services/prism.service';
-import { HighlightMouseDirective } from './shared/highlight-mouse.directive';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    SandBoxComponent,
-
+    SandBoxComponent,    
   ],
   imports: [
     BrowserModule,

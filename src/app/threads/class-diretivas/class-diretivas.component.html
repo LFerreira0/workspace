@@ -70,12 +70,21 @@
     }">Clique</button>
 
 
-    <app-class-ng-content>Conteudo à ser renderizado.</app-class-ng-content>
+    <app-class-ng-content class="cartao">Conteudo à ser renderizado.</app-class-ng-content>
 
     <h5>Criação de diretivas</h5>
 
-    <p HighLight>Utilizando diretiva customizada</p>
+    <p class="painel" HighLight>Utilizando diretiva customizada</p>
 
-    <h5 HighlightMouse>Diretivas com HostListener e HostBinding</h5>
+    <p class="painel" HighlightMouse>Diretivas com HostListener e HostBinding</p>
+
+    <p class="painel" [CustomHighlight]="'blue'" [defaultColor] = "'gray'">Diretivas com input property</p>
+    
+    <h5>Diretivas de estrutura</h5>
+
+    <p *ngIf="mostrarConteudo">Conteudo primário</p>
+    <p *ngElse="mostrarConteudo" >Conteudo secundário</p>
+    
+    <button class="btn btn-secondary" (click)="alternarConteudo()">Alternar</button>
 
 </div>
