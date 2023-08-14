@@ -18,6 +18,9 @@ export class ClassServicesComponent implements OnInit {
 
   onAddValue(value: string){
     this.classService.addValues(value);
+    this.classService.emitirValores.subscribe(
+      valor => console.log(valor)    
+    );
+    
   }
-
 }
