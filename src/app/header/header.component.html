@@ -1,35 +1,20 @@
 
 <header>
     <div class="container-header">
-        <div class="brand">
-            <img *ngIf="themeService.theme === templateEnums.theme.LIGHT" src="../../assets/images/pilha-de-tres-livros-preto.png" alt="Icone de livros preto">
-            <img *ngIf="themeService.theme === templateEnums.theme.DARK" src="../../assets/images/pilha-de-tres-livros-branco.png" alt="Icone de livros branco">
-            <a routerLink="/" (click)="exibirMenu = false" class="logo">WorkSpace</a>
-        </div>                
+        <a routerLink="/" (click)="exibirMenu = false" class="logo">
+            <div class="brand">
+                <img *ngIf="themeService.theme === templateEnums.theme.LIGHT" src="../../assets/images/pilha-de-tres-livros-preto.png" alt="Icone de livros preto">
+                <img *ngIf="themeService.theme === templateEnums.theme.DARK" src="../../assets/images/pilha-de-tres-livros-branco.png" alt="Icone de livros branco">
+                <span>WorkSpace</span>
+            </div>   
+        </a>             
         <nav>
             <ul>
-                <li (click)="exibirMenuSecundario()">Tópicos</li>
+                <a routerLink="/java-script" routerLinkActive="active"><li>JavaScript</li></a>
+                <li (click)="exibirMenuSecundario()">Angular</li>
                 <li>Documentação</li>
                 <li>Links</li>
                 <li>Cursos</li>
-
-                <div class="secondary-menu" *ngIf="exibirMenu">
-                    <div class="secondary-menu-content">
-                        <div class="topics">
-                            <ul>
-                                <a routerLink="/module" (click)="exibirMenu = false"><li>Modulos</li></a>
-                                <a routerLink="/template" (click)="exibirMenu = false"><li>Templates</li></a>                                
-                                <a routerLink="/binding" (click)="exibirMenu = false"><li>Biding</li></a>                                
-                                <a routerLink="/life-cycle" (click)="exibirMenu = false"><li>Ciclo de vida</li></a>     
-                                <a routerLink="/cli" (click)="exibirMenu = false"><li>Angular CLI</li></a>     
-                            </ul>
-                            <ul>
-                                <a routerLink="/diretivas" (click)="exibirMenu = false"><li>Diretivas</li></a>                               
-                                <a routerLink="/services" (click)="exibirMenu = false"><li>Serviços</li></a> 
-                            </ul>
-                        </div>
-                    </div>
-                </div>
             </ul>
         </nav>
         <div class="dark-mode">
@@ -39,3 +24,36 @@
     </div>
 </header>
 
+
+
+
+
+<!-- <div class="secondary-menu" *ngIf="exibirMenu">
+    <div class="secondary-menu-content">
+        <div class="topics">
+            <ul>
+                <a routerLink="/module" (click)="exibirMenu = false"><li>Modulos</li></a>
+                <a routerLink="/template" (click)="exibirMenu = false"><li>Templates</li></a>                                
+                <a routerLink="/binding" (click)="exibirMenu = false"><li>Biding</li></a>                                
+                <a routerLink="/life-cycle" (click)="exibirMenu = false"><li>Ciclo de vida</li></a>     
+                <a routerLink="/cli" (click)="exibirMenu = false"><li>Angular CLI</li></a>     
+            </ul>
+            <ul>
+                <a routerLink="/diretivas" (click)="exibirMenu = false"><li>Diretivas</li></a>                               
+                <a routerLink="/services" (click)="exibirMenu = false"><li>Serviços</li></a> 
+            </ul>
+        </div>
+    </div>
+</div> -->
+
+
+<div class="secondary-menu" *ngIf="exibirMenuJs">
+    <div class="secondary-menu-content">
+        <div class="topics">
+            <ul>
+                <a routerLink="/basics" (click)="exibirMenuJs = false"><li>Básico</li></a>
+                <a routerLink="/dom" (click)="exibirMenuJs = false"><li>DOM</li></a>                                                
+            </ul>                          
+        </div>
+    </div>
+</div>

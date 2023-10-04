@@ -14,13 +14,14 @@ export class ClassServicesComponent implements OnInit {
 
   ngOnInit(): void {
     this.valores = this.classService.getValues();
+    this.classService.emitirValores.subscribe(
+      valor => console.log(valor)    
+    );
   }
 
   onAddValue(value: string){
     this.classService.addValues(value);
-    this.classService.emitirValores.subscribe(
-      valor => console.log(valor)    
-    );
+  
     
   }
 }

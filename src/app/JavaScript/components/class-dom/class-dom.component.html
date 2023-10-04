@@ -1,0 +1,269 @@
+<div class="container-dom">
+    <h1>Dom para iniciantes</h1>
+    <table>
+        <thead>
+            <th>Classe e tag</th>
+            <th>Função</th>
+        </thead>
+        <tbody>
+            <td>getElementById</td>
+            <td>retorna um elemento utilizando seu id como filtdo</td>
+        </tbody>
+        <tbody>
+            <td>getElementByClassName</td>
+            <td>retorna uma lista de elementos que utilizam a classe solicitada</td>
+        </tbody>
+        <tbody>
+            <td>getElementByTagName</td>
+            <td>retorna todos os elementos que possuem a tag especificada</td>
+        </tbody>
+        <tbody>
+            <td>querySelector</td>
+            <td>retorna o primeiro elemento que combinar com seu seletor CSS</td>
+        </tbody>
+        <tbody>
+            <td>const array = Array.from(arraylike)</td>
+            <td>transforma arraylikes in Arrays</td>
+        </tbody>
+        <tbody>
+            <td>document.querySelectorAll('img[src^="img/string"]')</td>
+            <td>É possivel retornar apenas elementos que comecem com uma string especificamente.</td>
+        </tbody>
+        <tbody>
+            <td>variavel.outerHTML</td>
+            <td>retorna todo o HTML do elemento</td>
+        </tbody>
+        <tbody>
+            <td>variavel.innerHTML</td>
+            <td>retorna o HTML interno do elemento</td>
+        </tbody>
+        <tbody>
+            <td>variavel.innerText</td>
+            <td>retorna texto, sem tags</td>
+        </tbody>
+    </table>   
+    <br><br>
+    <p>Uma forma de otimizar funções com um callback como parametro é utilizando arrow Functions:</p>
+
+    <div class="codigos">
+
+        <pre>
+            <code class="snippet">{{code1}}</code>
+        </pre>    
+        <pre>
+            <code class="snippet">{{code2}}</code>
+        </pre>    
+    </div>
+<br>
+    <p><i>Caso a função tenha apenas uma linha, é possivel também eliminar as chaves.</i></p>
+
+    <pre>
+        <code class="snippet">{{code3}}</code>
+    </pre>
+
+    <h1>ClassList</h1>
+
+    <table>
+        <thead>
+            <th>Métodos e propriedades</th>
+            <th>Função</th>
+        </thead>
+        <tbody>
+            <td>classname</td>
+            <td>Retorna a string</td>
+        </tbody>
+        <tbody>
+            <td>classList</td>
+            <td>Retorna a lista de classes</td>
+        </tbody>
+        <tbody>
+            <td>classList.add</td>
+            <td>Adiciona uma nova classe</td>
+        </tbody>
+        <tbody>
+            <td>classname.remove</td>
+            <td>Remove uma classe</td>
+        </tbody>
+        <tbody>
+            <td>classname.toggle</td>
+            <td>Adiciona ou remove uma classe</td>
+        </tbody>
+        <tbody>
+            <td>classname.contains</td>
+            <td>Verifica se contém a classe</td>
+        </tbody>
+        <tbody>
+            <td>classname.replace</td>
+            <td>Substitui uma classe</td>
+        </tbody>
+        <tbody>
+            <td>teste.attribute[0]</td>
+            <td>Retorna o atributo na posição especificada do seletor</td>
+        </tbody>
+        <tbody>
+            <td>teste.getAttribute('seletor')</td>
+            <td>Retorna a ocorrência com base no seletor</td>
+        </tbody>
+        <tbody>
+            <td>teste.setAttribute('seletor')</td>
+            <td>Define o atributo do seletor selecionado</td>
+        </tbody>
+    </table>
+
+    <h1>Height e Width</h1>
+
+    <table>
+        <thead>
+            <th>Classe e tag</th>
+            <th>Função</th>
+        </thead>
+        <tbody>
+            <td>variável.clientHeight</td>
+            <td>retorna a altura de um elemento</td>
+        </tbody>
+        <tbody>
+            <td>variável.scrollHeight</td>
+            <td>retorna a altura de um elemento considerando o conteudo scrollado</td>
+        </tbody>
+        <tbody>
+            <td>variável.offSetTop</td>
+            <td>retorna a distancia em pixels do elemento selecionado e o topo da tela</td>
+        </tbody>
+        <tbody>
+            <td>variável.offSetLeft</td>
+            <td>retorna a distancia em pixels do elemento selecionado e a lateral esquerda da tela</td>
+        </tbody>  
+        <tbody>
+            <td>variável.getBoudingClientRect()</td>
+            <td>retorna diversos valores deste elemento, como altura, largura e distancia em relação aos demais elementos</td>
+        </tbody>   
+        <tbody>
+            <td>window.innerWidth</td>
+            <td>retorna largura da janela do usuário</td>
+        </tbody>    
+        <tbody>
+            <td>window.outerWidth</td>
+            <td>retorna largura da janela do usuário somando dev tools</td>
+        </tbody>  
+        <tbody>
+            <td>window.pageYOffSet</td>
+            <td>retorna distancia total de scroll no eixo Y</td>
+        </tbody> 
+        <tbody>
+            <td>window.pageXOffSet</td>
+            <td>retorna distancia total de scroll no eixo X</td>
+        </tbody> 
+        <tbody>
+            <td>window.matchMedia('(max-width: 600px)')</td>
+            <td>Utiliza media-queries como no CSS para verificar largurado browser</td>
+        </tbody> 
+        <tbody>
+            <td>window.onLoad</td>
+            <td>executa um bloco ao finalizar load da pagina</td>
+        </tbody> 
+    </table>
+    <br>
+    <span><i>propriedades também se aplicam à "Width"</i></span>
+    <br>
+    <h1>Eventos</h1>
+
+    <span><i>É uma boa prática separar a função do callback do addEventListener, ou seja, declarar uma função ao invés de passar diretamente uma função anônima</i></span>
+    <br>
+    <p>A funçãod e call back pode receber um parametro (event) que retorna diversas propriedades do evento</p>
+    <br>
+    <p>Em eventos, a palavra reservada <i>this</i> faz referência sempre ao elemento em que o addEventListener foi adicionado</p>
+    <br>
+    <p>Lista de eventos: <a href="https://developer.mozilla.org/en-US/docs/Web/Events" target="_blank">https://developer.mozilla.org/en-US/docs/Web/Events</a></p>
+    <br>
+    <table>
+        <tbody>
+            <td>event.currentTarget</td>
+            <td>Retorna em qual elemento foi adicionado o evento</td>
+        </tbody>
+        <tbody>
+            <td>event.target</td>
+            <td>Retorna o elemento filho dentre uma lista que engatilhou o evento</td>
+        </tbody>
+        <tbody>
+            <td>event.type</td>
+            <td>Retorna o tipo do evento</td>
+        </tbody>
+        <tbody>
+            <td>event.path</td>
+            <td>Retorna o caminho até o evento</td>
+        </tbody>
+        <tbody>
+            <td>event.preventDefault()</td>
+            <td>Previce contra o comportamento padrão do evento do browser</td>
+        </tbody>
+    </table>
+    <br>
+    <table>
+        <thead>
+            <th>Classe e tag</th>
+            <th>Função</th>
+        </thead>
+        <tbody>
+            <td>variavel.addEventListener('evento', function())</td>
+            <td>Adiciona um evento ao elemento selecionado</td>
+        </tbody>
+    </table>
+    <br>
+    <span>É possivel combinar eventos com loops:</span>
+    <br>
+    <pre>
+        <code class="snippet">{{code4}}</code>
+    </pre>
+
+    <h1>Traversing e manipulação</h1>
+    <table style="margin-bottom: 2em">
+        <tbody>
+            <td>elemento.parentElement</td>
+            <td>retorna o pai de um elemento</td>
+        </tbody>
+        <tbody>
+            <td>elemento.previousElementSibling</td>
+            <td>retorna o elemento anterior no mesmo nível</td>
+        </tbody>
+        <tbody>
+            <td>elemento.nextElementsibling</td>
+            <td>retorna o elemento posterior no mesmo nível</td>
+        </tbody>
+        <tbody>
+            <td>elemento.children</td>
+            <td>retorna uma HTML Collection com todos os filhos do elemento</td>
+        </tbody>
+        <tbody>
+            <td>elemento.firstChild</td>
+            <td>retorna o primeiro node dentro do elemento</td>
+        </tbody>
+        <tbody>
+            <td>elemento.childNodes</td>
+            <td>retorna não apenas os elementos, mas tudo dentro do seletor, como espaços, comentários e etc</td>
+        </tbody>
+        <tbody>
+            <td>lista.appendChild(novo)</td>
+            <td>adiciona ao fim da lista, o elemento passado via parametro</td>
+        </tbody>
+        <tbody>
+            <td>lista.insertBefore(novo, anterior)</td>
+            <td>adiciona um novo elemento na lista, especificando a ordem</td>
+        </tbody>
+        <tbody>
+            <td>elemento.removeChild(remover)</td>
+            <td>remove o elemento passado via parametro</td>
+        </tbody>
+        <tbody>
+            <td>elemento.replaceChild(substituto, substituir)</td>
+            <td>remove o elemento passado via parametro</td>
+        </tbody>
+        <tbody>
+            <td>const novoElemento = document.createElement('h1')</td>
+            <td>cria um novo elemento</td>
+        </tbody>
+        <tbody>
+            <td>elemento.cloneNode(true)</td>
+            <td>clona um elemento onde via parametro é possivel especificar se os filhos também serão clonados</td>
+        </tbody>
+    </table>
+</div>

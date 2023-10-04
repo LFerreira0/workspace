@@ -1,0 +1,30 @@
+.container-dom{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;    
+    font-family: 'Roboto', sans-serif;    
+
+    :ng-deep embed-nav group{
+        display: none;
+    }
+
+    table, thead, tbody, th, td{
+        padding: 1em;
+        border: var(--border-color-reverse);        
+        border-radius: 5px;
+    }
+
+    pre{
+        width: 30%;
+    }
+
+    .codigos{
+        display: flex;
+        gap: 2em;
+        align-items: center;
+
+   
+    }
+}

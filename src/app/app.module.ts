@@ -12,20 +12,23 @@ import { SandBoxComponent } from './main/sand-box/sand-box.component';
 import { PrismService } from './services/prism/prism.service';
 import { ThemeService } from './services/theme/theme.service';
 import { ThreadsModule } from './threads/threads.module';
+import { SnippetsComponent } from './shared/services/snippets/snippets.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    SandBoxComponent,    
+    SandBoxComponent,
+    SnippetsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ThreadsModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,    
   ],
 
   providers: [ThemeService, PrismService],

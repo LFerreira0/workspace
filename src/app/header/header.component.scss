@@ -5,7 +5,7 @@ body {
 }
 
 .container-header{
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -22,11 +22,20 @@ body {
 header {
     box-shadow: 0px 1px 5px -2px rgba(0,0,0,0.29);
     font-family: 'Roboto', sans-serif;
-    position: relative;    
-    font-size: 18px;
+    position: fixed;    
+    font-size: 18px;    
+    height: 70px;
+    z-index: 999999;
+    background-color: var( --background-color);
+    width: 100%;
     a {
         color: var(--font-color);        
         text-decoration: none;
+    }
+
+    .active{
+        background: var(--background-color-hover);
+        border-radius: 5px;
     }
 
     .brand {
@@ -34,6 +43,9 @@ header {
         justify-content: space-between;
         align-items: center;
         gap: 1em;
+        p{
+            background-color: red;
+        }
         img{
             height: 30px;
         }
@@ -49,9 +61,9 @@ header {
             list-style-type: none;            
             display: flex;
             margin-top: .9em;
-            align-items: center;            
+            align-items: center;  
+            gap: 1em;          
             
-
             li  {
                 padding: 1em;
 
@@ -69,38 +81,38 @@ header {
     }
 }
 
-.secondary-menu{
-    width: 100%;
-    height: 300px;
-    box-shadow: 1px 1px 5px -2px rgba(0,0,0,0.29);
-    position: absolute;
-    bottom: 0;
-    transform: translateY(100%);    
-    left: 0;
-    font-size: 16px;
-    background-color: var(--background-color);
-    z-index: 300;
-    border-bottom: 1px solid #0000001e;
+// .secondary-menu{
+//     width: 100%;
+//     height: 300px;
+//     box-shadow: 1px 1px 5px -2px rgba(0,0,0,0.29);
+//     position: absolute;
+//     bottom: 0;
+//     transform: translateY(100%);    
+//     left: 0;
+//     font-size: 16px;
+//     background-color: var(--background-color);
+//     z-index: 300;
+//     border-bottom: 1px solid #0000001e;
  
     
-    .secondary-menu-content{
-        width: 80%;
-        margin: 0 auto;              
-        display: flex;        
-        align-items: center;        
-        height: 100%;        
-        .topics{
-            display: flex;
-            ul{
-                display: block;
-                li{
-                    padding: .7em;
-                    border-bottom: var(--border);
-                }
-            }                                    
-        }
-    }
-}
+//     .secondary-menu-content{
+//         width: 80%;
+//         margin: 0 auto;              
+//         display: flex;        
+//         align-items: center;        
+//         height: 100%;        
+//         .topics{
+//             display: flex;
+//             ul{
+//                 display: block;
+//                 li{
+//                     padding: .7em;
+//                     border-bottom: var(--border);
+//                 }
+//             }                                    
+//         }
+//     }
+// }
 
 h1 {
     margin-top: 2em;

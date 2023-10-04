@@ -1,0 +1,52 @@
+.container-java-script{
+    width: 100%;
+    display: flex;
+    .side-nav{
+        width: 250px;
+        height: calc(100vh - 70px);
+        margin-top: 70px;
+        background-color: #111111;
+        position: fixed;
+        .conteudo{        
+            margin: 0 auto;                           
+            h1{
+                margin-left: 1em;
+            }
+            ul{
+                list-style-type: none;
+                padding: 0;  
+
+                .active{
+                    background-color: rgb(7, 112, 173) !important;
+                }
+                
+                li{                
+                    padding: 1em;
+                    width: 100%;
+                    margin: 0 auto;                    
+                    cursor: pointer;                          
+                    a{
+                        display: block;
+                        text-decoration: none;
+                        
+                    }
+
+   
+                }  
+                li:nth-child(even){
+                    background-color: #252525;
+                }                    
+                li:hover{
+                    background-color: rgb(7, 112, 173) !important;
+                    transition: .5s;
+                } 
+
+            }                                                    
+        }
+    }
+    .content{        
+        width: 100%;
+        margin-left: 250px;
+        margin-top: 70px;
+    }
+}

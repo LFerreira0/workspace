@@ -42,3 +42,12 @@ hr.rounder{
     border-radius: 5px;
     cursor: pointer;;
 }
+
+pre{
+    background-color: #2D2D2D; 
+    display: flex; 
+    min-height: 120px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px; 
+}

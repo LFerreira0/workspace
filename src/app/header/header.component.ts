@@ -9,6 +9,7 @@ import { Theme } from '../enums/theme.enum';
 })
 export class HeaderComponent implements OnInit {
   exibirMenu = false;  
+  exibirMenuJs = false;
   templateEnums = {
       theme: Theme
   }
@@ -20,8 +21,14 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {    
   }
 
+  public exibirMenuSecundarioJS(){
+    this.exibirMenuJs = !this.exibirMenuJs;
+    this.exibirMenu = false;
+  }
+
   public exibirMenuSecundario(){    
       this.exibirMenu = !this.exibirMenu;
+      this.exibirMenuJs = false;
   }
 
   public themeSwitch(){

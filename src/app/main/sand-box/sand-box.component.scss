@@ -16,6 +16,7 @@
     flex-grow: 1;
     background-color: var(--background-container);
     color: var(--font-color);
+    margin-top: 70px;
     
     .code{
         width: 49.6%;
@@ -70,13 +71,14 @@
 
     .console{
         width: 100%;
-        height: 50px;        
+        height: 60vh;        
         flex-grow: 0.7;        
         font-family: 'Roboto', sans-serif;       
         background-color: var(--background-color);
         border-radius: 5px;
         border: var(--border);
         margin-bottom: 0.4%;
+        position: fixed;        
 
         p{
             padding: 1em;
@@ -86,12 +88,14 @@
     .error{
         padding: 1em;
         width: 100%; 
-        height: 50px;           
+        height: 31.7vh;
+        margin-top: 60.3vh;           
         flex-grow: 0.3;        
         background-color: var(--background-color);
         border-radius: 5px;
         border: var(--border);
         margin-bottom: 0.4% !important;
+        position: fixed;
         p{
             color: red;
             font-weight: lighter   

@@ -10,6 +10,7 @@ import { ClassModuleComponent } from "./threads/class-module/class-module.compon
 import { ClassServicesComponent } from "./threads/class-services/class-services.component";
 import { ClassTemplateComponent } from "./threads/class-template/class-template.component";
 
+
 const APP_ROUTES: Routes = [
     {   path: '', component: SandBoxComponent   },
     {   path: 'module', component: ClassModuleComponent},
@@ -20,6 +21,7 @@ const APP_ROUTES: Routes = [
     {   path: 'cli', component: ClassCliComponent},
     {   path: 'diretivas', component: ClassDiretivasComponent},
     {   path: 'services', component: ClassServicesComponent},    
+    {   path: 'java-script', loadChildren: () => import('./JavaScript/components/java-script.module').then(m => m.JavaScriptModule) }
 ]
 
 @NgModule({
