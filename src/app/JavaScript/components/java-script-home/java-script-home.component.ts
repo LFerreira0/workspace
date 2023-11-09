@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-java-script-home',
@@ -8,8 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class JavaScriptHomeComponent implements OnInit {
 
   constructor() { }
-
+  
   ngOnInit(): void {
+  }
+
+  @HostListener("window:scroll")
+  public showScroll(){
+    console.log("teste");
+    
   }
 
 }

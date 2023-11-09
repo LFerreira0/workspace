@@ -4,15 +4,14 @@ import { JavaScriptHomeComponent } from './java-script-home/java-script-home.com
 import { ClassDomComponent } from './class-dom/class-dom.component';
 import { ClassBasicsComponent } from './class-basics/class-basics.component';
 import { JavaScriptRoutingModule } from './java-script-routing.module';
-import { RouterModule } from '@angular/router';
-
-
+import { ClassObjectsComponent } from './class-objects/class-objects.component';
 
 @NgModule({
   declarations: [
     JavaScriptHomeComponent,
     ClassDomComponent,
-    ClassBasicsComponent
+    ClassBasicsComponent,
+    ClassObjectsComponent
   ],
   imports: [
     CommonModule,

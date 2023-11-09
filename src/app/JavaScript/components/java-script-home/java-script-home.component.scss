@@ -15,32 +15,42 @@
             ul{
                 list-style-type: none;
                 padding: 0;  
-
+                
                 .active{
                     background-color: rgb(7, 112, 173) !important;
+                }       
+
+                .accordion-active ul{
+                    background-color: red !important;
                 }
                 
-                li{                
-                    padding: 1em;
+                li{                                    
                     width: 100%;
                     margin: 0 auto;                    
-                    cursor: pointer;                          
-                    a{
-                        display: block;
-                        text-decoration: none;
+                    cursor: pointer;    
+                    padding: 1em 1em;                       
+                    
+                    
+                    span{
+                        margin-left: 1rem;
                         
                     }
 
-   
+                    a{
+                        display: block;
+                        text-decoration: none;                        
+                        width: 100%;
+                    }                
+           
                 }  
+
                 li:nth-child(even){
                     background-color: #252525;
                 }                    
                 li:hover{
                     background-color: rgb(7, 112, 173) !important;
                     transition: .5s;
-                } 
-
+                }                 
             }                                                    
         }
     }
