@@ -31,6 +31,7 @@ header {
     a {
         color: var(--font-color);        
         text-decoration: none;
+        
     }
 
     .active{
@@ -67,10 +68,15 @@ header {
             li  {
                 padding: 1em;
 
+                a{                    
+                    padding: 1em;
+                    max-width: 70px;
+                }
+
                 &:hover {
                     background: var(--background-color-hover);
                     cursor: pointer;
-                    border-radius: 5px;
+                    border-radius: 5px;                    
                 }       
 
                 &:first-child:hover  ~.secondary-menu{

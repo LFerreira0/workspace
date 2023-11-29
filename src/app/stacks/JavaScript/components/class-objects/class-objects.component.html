@@ -1,0 +1,253 @@
+<div class="container-objects">
+    <h1>Objetos</h1>
+
+    <p>Para criar um objeto, basta definir uma variável e iniciar a definição de seu valor com chaves.</p>
+    <br>    
+    <dl>
+        <dt>Constructor Functions</dt>
+        <dd>São responsáveis por construir novos objetos sempre que chamamos a mesma.</dd>
+        <dt>Keyword "new"</dt>
+        <dd>A palavra "new" é responsável por criar um novo objeto baseado na função construtora.</dd>
+        <dt>Keyword "this"</dt>
+        <dd>Faz referência ao próprio objeto costruido com a Constructor function.</dd>
+        <dt>Construtores nativos</dt>
+        <dd>Objetos, Funções, numeros, strings e outros tipos de dados são criados utilizando construtores. Esses construtores possue protótipo com propriedades e métodos que poderão ser acessados pelo tipo de dado.</dd>
+    </dl>
+
+    <table>
+        <tbody>
+            <td>const teste = Array.from(arrayLike)</td>
+            <td>Converte um arrayLike em Array</td>
+        </tbody>
+        <tbody>
+            <td>const lista = Array.from(nodeList)</td>
+            <td>Transforma uma nodeList em Array</td>
+        </tbody>
+    </table>
+    <br>
+    <p>Prototypes estão ligados a função construtora. Objetos criados a partir deste constructor não possuem prototype.</p>
+    <p>Caso um dos objetos instanciados tenha especificidades, como funções ou atributos diferentes, é possivel crialos no prototype, não afetando o construtor.</p>
+    <p>O Objeto criado utilizando o construtor possui acesso aos métodos e pripriedades do protótipo.</p>
+    <br>
+    <p><strong>Host: </strong>Objetos do Host são aqueles implementados pelo próprio ambiente. Por exemplo no browser possuímos objetos do DOM, como DomList, HTMLCollection e outros. EM node.js os objetos do Host são diferentes, já que não estamos em um ambientedo browser.</p>
+    <br>
+    <h3>String</h3>
+    <table>
+        <tbody>
+            <td>length</td>
+            <td>Propriedade com total de caracteres da string</td>
+        </tbody>
+
+        <tbody>
+            <td>charAt(n)</td>
+            <td>Retorna o caractere de acordo com o index de (n)</td>
+        </tbody>
+
+        <tbody>
+            <td>concat</td>
+            <td>Concatena as strings e retorna o resultado</td>
+        </tbody>
+
+        <tbody>
+            <td>includes(search, position)</td>
+            <td>Procura pela string exata dentro de outra string. A procura é case sensitive</td>
+        </tbody>
+
+        <tbody>
+            <td>endsWith(search) e startsWith(search)</td>
+            <td>Procura pela string exata dentro de outra string. A procura é case sensitive</td>
+        </tbody>
+
+        <tbody>
+            <td>slice(start, end)</td>
+            <td>Corta a string de acordo com os valores de start e end</td>
+        </tbody>
+        <tbody>
+            <td>substring(start, end)</td>
+            <td>Conta a string de acordo com os valores de start e end. Não funciona com valores negativos como o slice</td>
+        </tbody>
+        <tbody>
+            <td>lastIndexOf('teste')</td>
+            <td>retorna a ultima ocorrência da string inserida</td>
+        </tbody>
+        <tbody>
+            <td>padStart(n, '-') e padEnd(n, '-')</td>
+            <td>Aumenta o tamanho da string para o valor n. O preenchimento é feito com o valor especificado no segundo argumento ou espaços como default </td>
+        </tbody>
+        <tbody>
+            <td>repeat(n)</td>
+            <td>Repete a string (n) vezes</td>
+        </tbody>
+        <tbody>
+            <td>replace(regexp|substr, newstr|function)</td>
+            <td>Substitui parte da string. Utilizando um valor fixo, trocará apenas a primeira ocorrência</td>
+        </tbody>
+        <tbody>
+            <td>split(padrao)</td>
+            <td>Divide a string de acordo com o padrão passado e retorna um Array</td>
+        </tbody>
+        <tbody>
+            <td>toLowerCase e toUpperCase</td>
+            <td>Retorna a string em letras maiusculas ou minuscuals.</td>
+        </tbody>
+        <tbody>
+            <td>trim, trimStart e trimEnd</td>
+            <td>Remove espaços em branco de ambos, inicio ou fim</td>
+        </tbody>
+    </table>
+    <br>
+    <h3>Number</h3>
+    <table>
+        <tbody>
+            <td>isNaN() e  isInteger()</td>
+            <td>verifica respectivamente se o valor é NaN e se é integral</td>
+        </tbody>
+        <tbody>
+            <td>parseFloat</td>
+            <td>Retorna numeros a partir de uma string</td>
+        </tbody>
+        <tbody>
+            <td>parseInt</td>
+            <td>Retorna numeros inteiros a partir de uma string</td>
+        </tbody>
+        <tbody>
+            <td>toFixed(n)</td>
+            <td>Arredonda um numero com base no total de casas decimais n</td>
+        </tbody>
+        <tbody>
+            <td>toString(radix)</td>
+            <td>Transforma um numero em uma string com base no Radix. Use 10 para sistema decimal.</td>
+        </tbody>
+        <tbody>
+            <td>toLocaleString(lang, options)</td>
+            <td>Formata o número de acordo com a lingua e opções passadas</td>
+        </tbody>
+    </table>
+    <br>
+    <h3>Math</h3>
+    <br>
+    <p>É um objeto nativo que possui propriedades e métodos de expressões matemáticas comuns</p>
+    <table>
+        <tbody>
+            <td>abs()</td>
+            <td>Retorna um valor absoluto, ou seja, transforma negativo em positivo</td>
+        </tbody>
+        <tbody>
+            <td>ceil() e floor()</td>
+            <td>Arredonda o numero para cima, retornando sempre uma integral e floor para baixo</td>
+        </tbody>
+
+        <tbody>
+            <td>round()</td>
+            <td>Arredonda um valor para o numero integral mais próximo.</td>
+        </tbody>
+        <tbody>
+            <td>max()</td>
+            <td>Retorna o maior numero de uma lista de valores</td>
+        </tbody>
+        <tbody>
+            <td>min()</td>
+            <td>Retorna o menor numero de uma lista de valores</td>
+        </tbody>
+        <tbody>
+            <td>random()</td>
+            <td></td>
+        </tbody>
+    </table>
+    <br>
+    <h3>Array</h3>
+    <br>
+    <p>Arrays armazenam uma coleção de elementos. Estes podem ser strings, arrays, booleans, numbers, functions objects e mais.</p>
+    <br>
+    
+    <table>
+        <tbody>
+            <td>Array.isArray()</td>
+            <td>Verifica se o valor passado é um array e retorna um valor booleano</td>
+        </tbody>
+        <tbody>
+            <td>[].length</td>
+            <td>Retorna o tamanho do array</td>
+        </tbody>
+    </table>
+    <br>
+    <h2>Métodos modificados</h2>
+    <br>
+    <p>Além de retornarem um valor, modificam o Array original.</p>
+
+    <table>
+        <tbody>
+            <td>[].sort()</td>
+            <td>Organiza pelo valor unicode</td>
+        </tbody>
+        <tbody>
+            <td>[].unshift()</td>
+            <td>Adiciona elementos ao inicio do array e retorna o length dele.</td>
+        </tbody>
+        <tbody>
+            <td>[].push()</td>
+            <td>Adiciona elementos ao final da array e retorna o length dele.</td>
+        </tbody>
+        <tbody>
+            <td>[].shift()</td>
+            <td>Remove o primeiro elemento do array e retorna o mesmo.</td>
+        </tbody>
+        <tbody>
+            <td>[].pop()</td>
+            <td>Remove o último elemento da array e retorna o mesmo.</td>
+        </tbody>
+        <tbody>
+            <td>[].reverse()</td>
+            <td>Inverte os itens do array e retorna a nova array</td>
+        </tbody>
+        <tbody>
+            <td>[].copyWithin(alvo, iniciom, final)</td>
+            <td>A partir do alvo, ele irá copiar a array começando do inicio até o final e vai preencher a mesma com essa cópia. Caso omita os valores do inicio e final, ele irá utilizar o inicio como 0 e o final o valor total do array.</td>
+        </tbody>
+        <tbody>
+            <td>[].fill(valor, inicio final)</td>
+            <td>Preenche o array com o valor, do inivio até o fim</td>
+        </tbody>
+        <tbody>
+            <td>[].concat()</td>
+            <td>O Array original não é modificado, apenas retorna um array modificado, onde os valores serão concatenados com o array fornecido.</td>
+        </tbody>
+        <tbody>
+            <td>[].includes(n)</td>
+            <td>Verifica se o array possui o valor n e retorna true ou false</td>
+        </tbody>
+        <tbody>
+            <td>[].indexOf(n)</td>
+            <td>Verifica se o array possui o valor n e retorna o index do primeiro n encotnrado</td>
+        </tbody>
+        <tbody>
+            <td>[].lastIndexOf(n)</td>
+            <td>Verifica se o array possui o valor n e retorna o index do ultimo n encontrado</td>
+        </tbody>
+        <tbody>
+            <td>[].join(n)</td>
+            <td>Junta todos os valores de um array e retorna uma string com eles. Fornecendo um valor n, ele será utilizado para a junção dos itens.</td>
+        </tbody>
+        <tbody>
+            <td>[].slice(inicio, final)</td>
+            <td>Retorna os itens da array do inicio ao final especificado</td>
+        </tbody>
+    </table>
+    <br>
+    <h2>Iterando Arrays</h2>
+    <br>
+    <table>
+        <tbody>
+            <td>[].forEach()</td>
+            <td>A função de callback é executada para cada item da array. Ela possui 3 argumentos, um representa o item atual, outro o index e o terceiro, o prório array.</td>
+        </tbody>
+        <tbody>
+            <td>[].map()</td>
+            <td>Funciona da mesma forma que o forEach, porém ao invés de retornar undefined, retorna uma nova array com valores atualizados de acordo com o return de cada iteração.</td>
+        </tbody>
+        <tbody>
+            <td>[].reduce()</td>
+            <td>Executa a função de callback para cada item do array. Um valor especial existe neste callback, chamado acumulador, que nada mais é que o retorno da iteração anterior.</td>
+        </tbody>
+    </table>
+</div>
